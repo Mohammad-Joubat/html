@@ -1,0 +1,85 @@
+
+.container1 {
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 1px;
+	
+}
+
+.line1 {
+    height: 20px;
+    min-width:80px;
+    margin: 0 auto 10px;
+    line-height:20px;
+    font-size: 14px;
+    color:#343a40;
+    padding: 0 0 0 10px;
+    position: relative;
+    list-style: none;
+    margin: 3px 0;
+    font-weight: 100; 
+    text-align: right;  
+}
+
+.line1:before {
+    content: "";
+    position: absolute;
+    top: 20; 
+    left: 0;
+    width: 102%;
+    height: 20px;
+    background-color:#d2d6d7;
+    border-radius: 1000px;
+    z-index: -2;
+}
+
+.line1:after {
+    content: "";
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 0;
+    height: 20px;
+    background-color: #bd5d38;
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    z-index: -2;
+}
+
+.line1.arabic:after {
+    animation-name: arabic ;
+}
+
+@keyframes arabic {
+    to {
+        width: 102%;
+    }
+}
+
+
+
+
+
+.line1.hebrew:after {
+    animation-name: hebrew;
+}
+
+@keyframes hebrew {
+    to {
+        width: 102%;
+    }
+}
+
+.line1.english:after {
+    animation-name: english;
+}
+
+@keyframes english {
+    to {
+        width: 70%;
+    }
+}
+
+

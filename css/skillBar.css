@@ -1,0 +1,124 @@
+
+.container {
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 1px;
+	
+}
+
+.line {
+    height: 10px;
+    min-width:80px;
+    margin: 0 auto 10px;
+    line-height:20px;
+    font-size: 14px;
+    color:#343a40;
+    padding: 0 0 0 10px;
+    position: relative;
+    list-style: none;
+    margin: 3px 0;
+    font-weight: 100; 
+    text-align: right;  
+}
+
+.line:before {
+    content: "";
+    position: absolute;
+    top: 20; 
+    left: 0;
+    width: 102%;
+    height: 20px;
+    background-color:#d2d6d7;
+    border-radius: 1000px;
+    z-index: -2;
+}
+
+.line:after {
+    content: "";
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 0;
+    height: 20px;
+    background-color: #bd5d38;
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    z-index: -2;
+}
+
+
+
+.line.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 77%;
+    }
+}
+
+.line.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 47%;
+    }
+}
+
+
+.line.java:after {
+    animation-name: java;
+}
+
+@keyframes java {
+    to {
+        width: 52%;
+    }
+}
+
+.line.selenium:after {
+    animation-name: selenium;
+}
+
+@keyframes selenium {
+    to {
+        width: 72%;
+    }
+}
+
+
+.line.sql:after {
+    animation-name: sql;
+}
+
+@keyframes sql {
+    to {
+        width: 82%;
+    }
+}
+
+.line.work-style:after {
+    animation-name: work-style;
+}
+
+@keyframes work-style {
+    to {
+        width: 102%;
+    }
+}
+
+.line.networking:after {
+    animation-name: networking;
+}
+
+@keyframes networking {
+    to {
+        width: 32%;
+    }
+}
+
